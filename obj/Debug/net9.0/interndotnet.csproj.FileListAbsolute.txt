@@ -1,0 +1,14 @@
+/Users/sandipadhikari/interndotnet/bin/Debug/net9.0/interndotnet
+/Users/sandipadhikari/interndotnet/bin/Debug/net9.0/interndotnet.deps.json
+/Users/sandipadhikari/interndotnet/bin/Debug/net9.0/interndotnet.runtimeconfig.json
+/Users/sandipadhikari/interndotnet/bin/Debug/net9.0/interndotnet.dll
+/Users/sandipadhikari/interndotnet/bin/Debug/net9.0/interndotnet.pdb
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.AssemblyInfoInputs.cache
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.AssemblyInfo.cs
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.csproj.CoreCompileInputs.cache
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.dll
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/refint/interndotnet.dll
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.pdb
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.genruntimeconfig.cache
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/ref/interndotnet.dll
