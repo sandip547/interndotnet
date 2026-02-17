@@ -12,3 +12,4 @@
 /Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.pdb
 /Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.genruntimeconfig.cache
 /Users/sandipadhikari/interndotnet/obj/Debug/net9.0/ref/interndotnet.dll
+/Users/sandipadhikari/interndotnet/obj/Debug/net9.0/interndotnet.sourcelink.json
