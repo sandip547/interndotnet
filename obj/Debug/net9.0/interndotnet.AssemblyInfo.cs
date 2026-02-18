@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("interndotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1b6c1acce3a26df440ede44785d95c1213d6eb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e957e5e37c18ff583803b11293f89ceb61c27eae")]
 [assembly: System.Reflection.AssemblyProductAttribute("interndotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("interndotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
