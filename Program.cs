@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using interndotnet.Data;
 using interndotnet.Services;
+using interndotnet.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -13,13 +14,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllers();
 
-// Register JWT service
 builder.Services.AddScoped<JwtService>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 
-// Add JWT Authentication
 builder.Services.AddAuthentication(options =>
     {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -39,8 +38,10 @@ builder.Services.AddAuthentication(options =>
             IssuerSigningKey = new SymmetricSecurityKey(key)
         };
     });
-
+builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

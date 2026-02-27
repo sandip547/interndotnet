@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4dfuP22Gfiw=",
+  "dgSpecHash": "4EBNvZGnhCc=",
   "success": true,
   "projectFilePath": "/Users/sandipadhikari/interndotnet/interndotnet.csproj",
   "expectedPackageFiles": [
+    "/Users/sandipadhikari/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512",
     "/Users/sandipadhikari/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/sandipadhikari/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "/Users/sandipadhikari/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

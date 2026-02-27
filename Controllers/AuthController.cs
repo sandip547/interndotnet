@@ -1,5 +1,6 @@
 using interndotnet.Models;
 using interndotnet.Services;
+using interndotnet.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace interndotnet.Controllers;
@@ -10,21 +11,23 @@ namespace interndotnet.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly JwtService _jwtService;
+    private readonly IUserService _userService;
 
-    public AuthController(JwtService jwtService)
+    public AuthController(JwtService jwtService,IUserService userService)
     {
         _jwtService = jwtService;
+        _userService = userService;
     }
 
     [HttpPost("login")]
-    public IActionResult Login(UserLogin login)
+    public async Task<IActionResult> Login(UserLogin login)
     {
-        if (login.Username == "admin" && login.Password == "password")
-        {
-            var token = _jwtService.GenerateToken(login.Username);
-            return Ok(new { token });
-        }
-
-        return Unauthorized();
+        Console.WriteLine("Hello successful");
+        var user = await _userService.AuthenticateAsync(login.Username, login.Password);
+        
+        if (user == null) return Unauthorized();
+        var token = _jwtService.GenerateToken(login.Username);
+        return Ok(new { token });
+        
     }
 }
