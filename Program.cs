@@ -38,6 +38,15 @@ builder.Services.AddAuthentication(options =>
             IssuerSigningKey = new SymmetricSecurityKey(key)
         };
     });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("AllowAll")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<IBookService, BookService>();
@@ -45,7 +54,9 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IQuoteService, QuoteService>();
 
 var app = builder.Build();
-
+app.UseCors("AllowAngular");
+app.UseAuthentication();
+app.UseAuthorization(); 
 app.MapControllers();
 
 app.Run();
