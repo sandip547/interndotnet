@@ -42,7 +42,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
     {
-        policy.WithOrigins("AllowAll")
+        policy.WithOrigins("https://internangular.netlify.app")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
